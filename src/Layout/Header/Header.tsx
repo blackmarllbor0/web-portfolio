@@ -4,7 +4,9 @@ export const Header = () => {
   return (
     <header>
       <div className="me">
-        <h1>Даниил Панов</h1>
+        <h1>
+          <strong>Даниил Панов</strong>
+        </h1>
         <a
           href="https://github.com/blackmarllbor0"
           target={"_blank"}
@@ -13,7 +15,7 @@ export const Header = () => {
           @blackmarllbor0
         </a>
       </div>
-      <p>Люблю писать код и думать о хорошем</p>
+      <p>Люблю писать код и не думать только о плохом</p>
     </header>
   );
 };

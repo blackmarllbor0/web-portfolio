@@ -1,10 +1,32 @@
 @import "../../Styles/mixin.scss";
+@import "../../Styles/vars.scss";
 
 header {
   @include col;
 
   div.me {
     @include row;
+    gap: 5px;
     align-items: center;
+
+    h1 {
+      font-weight: 900;
+    }
+
+    a {
+      @include link;
+      font-weight: 500;
+      margin-top: 5px;
+      font-size: 16px;
+      transition: $main_transition;
+
+      &:hover {
+        color: lighten($color: $main_font_color, $amount: 50);
+      }
+    }
+  }
+
+  p {
+    font-weight: 500;
   }
 }
