@@ -1,0 +1,10 @@
+@import "../../Styles/mixin.scss";
+
+header {
+  @include col;
+
+  div.me {
+    @include row;
+    align-items: center;
+  }
+}
