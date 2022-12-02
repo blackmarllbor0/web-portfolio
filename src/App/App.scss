@@ -3,10 +3,12 @@
 * {
   margin: 0;
   padding: 0;
+  color: $main_font_color;
 }
 
 body {
   display: grid;
   place-items: center;
   font-family: $main_font_family;
+  padding: 20px 0;
 }
