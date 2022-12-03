@@ -16,5 +16,27 @@
   <body>
     <noscript>You need to enable JavaScript to run this app.</noscript>
     <div id="root"></div>
+
+    <!-- <script>
+    // запрет щелчка правой кнопки
+    window.oncontextmenu = () => false;
+    // запрет нажатия горячих клавиш
+    window.onkeydown =
+      window.onkeydown =
+      window.onkeypress =
+        () => {
+          window.event.returnValue = false;
+          return false;
+        };
+    // запрет на открытие консоли через панель
+    let h = window.innerHeight,
+      w = window.innerWidth;
+    window.onresize = () => {
+      if (h !== window.innerHeight || w !== window.innerWidth) {
+        window.close();
+        window.location = "about:blank";
+      }
+    };
+    </script> -->
   </body>
 </html>
