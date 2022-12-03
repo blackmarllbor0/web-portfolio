@@ -1,4 +1,5 @@
 @import "../Styles/vars.scss";
+@import "../Styles/mixin.scss";
 
 * {
   margin: 0;
@@ -7,8 +8,12 @@
 }
 
 body {
-  display: grid;
-  place-items: center;
   font-family: $main_font_family;
   padding: 20px 0;
+  width: 600px;
+  margin: auto;
+}
+
+section {
+  margin: 20px 0;
 }
