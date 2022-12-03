@@ -1,0 +1,39 @@
+@import "../../Styles/vars.scss";
+@import "../../Styles/mixin.scss";
+
+section.about {
+  background-color: $main_gray_color;
+  @include row;
+  flex-direction: row-reverse;
+
+  width: 600px;
+  height: 500px;
+  border-radius: 10px;
+
+  p {
+    padding: 15px;
+    font-size: 19px;
+    word-spacing: 10px;
+    line-height: 25px;
+    font-weight: 400;
+  }
+
+  p#next_desc {
+    position: absolute;
+    width: 600px - 30px;
+    transform: $translate;
+    left: 50%;
+    top: 49.2%;
+  }
+
+  div#image_block {
+    background-color: #fff;
+    height: 210px;
+    padding: 0px 10px;
+    border-end-start-radius: 10px;
+
+    img#me {
+      border-radius: 10px;
+    }
+  }
+}
