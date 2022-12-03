@@ -1,0 +1,8 @@
+@import "../../Styles/mixin.scss";
+
+section.projects {
+  h1 {
+    @include center;
+    font-size: 36px;
+  }
+}
