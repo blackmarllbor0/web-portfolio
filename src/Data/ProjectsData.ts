@@ -58,6 +58,82 @@ export const projectsData: ProjectType[] = [
       "valid.sj",
       "thunk",
     ],
-    projectDescription: "",
+    projectDescription: `
+    В приложение есть выбор страны и города (по умолчанию Москва). Есть страницы регистрации и входа. 
+    Проект представлет собой интернет-магазин электроной техники: телефоны, часы, колонки и т.д.
+    Есть фильтры по категориям и цене. Есть быстрый просмотр товара (с красиво сделаной панелью плавания по фотографии),
+    так же можно добавить товар в корзину или оформить заказ (сумма считается автоматически) и многое другое.
+    `,
+  },
+  {
+    id: 4,
+    projectName: "node-weather-cli",
+    projectLink: "https://github.com/blackmarllbor0/node-wheather-cli",
+    projectType: "back",
+    projectTechnologies: ["JavaScript", "Node.js", "Chalk"],
+    projectDescription: `
+    API представляет собой консольное приложение для просмотра погоды в зависимости
+    от вашего местоположения, которое вы можете сохранить в токен. Работает как на Windows,
+    так и на IOS/Linux.
+    `,
+    projectResultLink:
+      "https://www.npmjs.com/package/node-weater-cli-blackmarllboro",
+  },
+  {
+    id: 5,
+    projectName: "react-nest-postges-todo-list",
+    projectLink:
+      "https://github.com/blackmarllbor0/react-nest-postges-todo-list",
+    projectType: "back",
+    projectTechnologies: [
+      "Typescript",
+      "Node.js",
+      "Nest.js",
+      "Jest",
+      "JsonWebToken",
+      "bcrypt",
+      "class-walidator",
+      "class-transformer",
+      "PostgreSql",
+      "Docker",
+      "TypeOrm",
+      "Swagger",
+      "Rest API",
+      "Coockie",
+    ],
+    projectDescription: `
+      Серверное приложение, которое реализует методы login/register, использует токены JWT 
+      для авторизации пользователя. Можно создавать список задач с выбранной категорией. 
+      Сделана валидация данных, удобно переносимая - благодоря Dokcer - база данных.
+      Данные для входа сохранены и защищены благодоря cookie файлам. Документирование 
+      Swagger и многое другое.
+      `,
+  },
+  {
+    id: 6,
+    projectName: "shop-cart-rest-api",
+    projectLink: "https://github.com/blackmarllbor0/shop-cart-rest-api",
+    projectType: "back",
+    projectTechnologies: [
+      "Typescript",
+      "Node.js",
+      "Nest.js",
+      "Jest",
+      "JsonWebToken",
+      "bcrypt",
+      "class-walidator",
+      "class-transformer",
+      "PostgreSql",
+      "Docker",
+      "TypeOrm",
+      "Rest API",
+      "Coockie",
+    ],
+    projectDescription: `
+    Вы можете зайти как неавторизированый пользователь и посмотреть все доступные товары.
+    Вы можете зайти или зарегестрировать свою учетную запись, и уже после добавить товар в 
+    корзину или оформить заказ. Вы, если у вас есть такая привелегия, можете зайти
+    как администартор и добоавлять, изменять и улалять товары. Так же можете делать заказы и себе.
+    `,
   },
 ];
