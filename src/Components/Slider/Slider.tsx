@@ -1,15 +1,62 @@
 import "./Slider.scss";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/scss";
+import { ProjectProp } from "../Projects/ProjectProp";
+import randomColor from "randomcolor";
 
-export const Slider = () => {
+export const Slider = ({ projects }: ProjectProp) => {
+  const colors = randomColor({ count: projects.length, luminosity: "light" });
+
+  const render = projects.map(
+    (
+      {
+        id,
+        projectName,
+        projectLink,
+        projectType,
+        projectTechnologies,
+        projectDescription,
+        projectResultLink,
+      },
+      index
+    ) => (
+      <SwiperSlide key={id}>
+        <div
+          className="project_slide"
+          style={{ backgroundColor: colors[index] }}
+        >
+          <h2 id="project_name">{projectName}</h2>
+          <a href={projectLink} target={"_blank"}>
+            Репозиторий проекта
+          </a>
+          <div className="tech">
+            <span className="tech_type">
+              {projectType === "back" ? "Backend" : "Frontend"}
+            </span>
+            <div className="tech_stack">
+              {"[ "}
+              {projectTechnologies.map((item) => (
+                <strong className="tech_item">{`${item}, `}</strong>
+              ))}
+              {" ]"}
+            </div>
+          </div>
+          <div className="project_desc">
+            <p>{projectDescription}</p>
+          </div>
+          {projectResultLink ? (
+            <a href={projectResultLink} target={"_blank"}>
+              Посмотреть проект
+            </a>
+          ) : null}
+        </div>
+      </SwiperSlide>
+    )
+  );
+
   return (
     <Swiper spaceBetween={150} slidesPerView={1}>
-      <SwiperSlide className="project_slide">1</SwiperSlide>
-      <SwiperSlide className="project_slide">2</SwiperSlide>
-      <SwiperSlide className="project_slide">13</SwiperSlide>
-      <SwiperSlide className="project_slide">41</SwiperSlide>
-      <SwiperSlide className="project_slide">15</SwiperSlide>
+      {render}
     </Swiper>
   );
 };

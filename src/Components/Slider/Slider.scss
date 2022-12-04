@@ -1,0 +1,28 @@
+@import "../../Styles/mixin.scss";
+
+div.project_slide {
+  cursor: pointer;
+  user-select: none;
+  @include col;
+  height: 375px;
+  padding: 15px;
+  border-radius: 10px;
+  align-items: center;
+  gap: 1rem;
+  justify-content: space-between;
+
+  div.tech {
+    @include col;
+    align-items: center;
+    gap: 7px;
+
+    strong {
+      letter-spacing: 1px;
+      text-align: center;
+    }
+  }
+
+  div.project_desc {
+    padding: 10px;
+  }
+}
