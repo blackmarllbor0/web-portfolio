@@ -5,7 +5,7 @@ export const Header = () => {
     <header>
       <div className="me">
         <h1>
-          <strong>Даниил Панов</strong>
+          <strong>Daniel Panov</strong>
         </h1>
         <a
           href="https://github.com/blackmarllbor0"

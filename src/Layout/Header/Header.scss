@@ -9,16 +9,20 @@ header {
     gap: 5px;
     align-items: center;
 
+    h1, a, p {
+      letter-spacing: 5px;
+    }
+    
     h1 {
       font-weight: 900;
-      font-size: 50px;
+      font-size: 70px;
     }
 
     a {
       @include link;
       font-weight: 500;
       margin-top: 5px;
-      font-size: 18px;
+      font-size: 22px;
       transition: $main_transition;
 
       &:hover {
@@ -30,7 +34,7 @@ header {
 
   p {
     font-weight: 400;
-    font-size: 21px;
+    font-size: 26px;
     letter-spacing: 1.8px;
   }
 }
