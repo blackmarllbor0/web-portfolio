@@ -12,14 +12,14 @@ export const About = () => {
         Занимаюсь веб-программированием уже <strong>2 года</strong>. Имею около{" "}
         <strong>8 месяцев комерческого опыта </strong> {" на "}
         <strong>freelance</strong> биражах. Как основной язык -{" "}
-        <strong>TypeScript</strong>.
-      </p>
-      <p id="next_desc">
-        Так же имеется опыт в других направлениях. Был опыт создания игр на
+        <strong>TypeScript</strong>. Так же имеется опыт в других направлениях.
+        Был опыт создания игр на
         <strong>{" Unity"}</strong>, программирование учебного робота (как не
         странно - на <strong>JavaScript</strong>) и не только. Занимаюсь как{" "}
-        <strong>front</strong>, так и <strong>back</strong> частью
-        веб-прложений. Основной стек:{" "}
+        <strong>front</strong>, так и <strong>back</strong>
+      </p>
+      <p id="next_desc">
+        частью веб-прложений. Основной стек:{" "}
         <strong>
           {"{React/Nest}"}
           *.js
