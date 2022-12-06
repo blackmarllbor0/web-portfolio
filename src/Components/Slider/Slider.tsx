@@ -26,7 +26,7 @@ export const Slider = ({ projects }: ProjectProp) => {
           style={{ backgroundColor: colors[index] }}
         >
           <h2 id="project_name">{projectName}</h2>
-          <a href={projectLink} target={"_blank"}>
+          <a href={projectLink} target={"_blank"} rel="noreferrer">
             Репозиторий проекта
           </a>
           <div className="tech">
@@ -35,8 +35,10 @@ export const Slider = ({ projects }: ProjectProp) => {
             </span>
             <div className="tech_stack">
               {"[ "}
-              {projectTechnologies.map((item) => (
-                <strong className="tech_item">{`${item}, `}</strong>
+              {projectTechnologies.map((item, index) => (
+                <strong key={item} className="tech_item">{`${item}${
+                  index === projectTechnologies.length - 1 ? "" : ","
+                } `}</strong>
               ))}
               {" ]"}
             </div>
@@ -45,7 +47,7 @@ export const Slider = ({ projects }: ProjectProp) => {
             <p>{projectDescription}</p>
           </div>
           {projectResultLink ? (
-            <a href={projectResultLink} target={"_blank"}>
+            <a href={projectResultLink} target={"_blank"} rel="noreferrer">
               Посмотреть проект
             </a>
           ) : null}
