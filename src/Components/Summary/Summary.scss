@@ -1,0 +1,30 @@
+@import "../../Styles/vars.scss";
+@import "../../Styles/mixin.scss";
+
+section.summary {
+  background-color: $main_gray_color;
+  border-radius: 10px;
+  padding: 20px;
+  height: 80px;
+
+  h1 {
+    font-weight: normal;
+  }
+
+  div.download_block {
+    background-color: #fff;
+    width: max-content;
+    padding: 10px;
+    border-radius: 10px;
+    position: relative;
+    left: 75.5%;
+    bottom: 15%;
+    border: 2px solid #000;
+
+    cursor: pointer;
+
+    a {
+      @include link;
+    }
+  }
+}
