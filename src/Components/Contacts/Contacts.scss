@@ -1,0 +1,65 @@
+@import "../../Styles/mixin.scss";
+
+section.contacts {
+  @include col;
+  gap: 1rem;
+
+  div.links_me {
+    @include row;
+    gap: 2rem;
+
+    a.github,
+    a.telegram,
+    a.gmail {
+      @include row;
+      @include link;
+      border-radius: 10px;
+      width: max-content;
+      color: #fff;
+      align-items: center;
+      gap: 0.5rem;
+      padding: 5px 10px;
+      font-size: 15.5px;
+      transition: all 0.2s linear;
+
+      svg.logo {
+        border-radius: 50%;
+        width: 23px;
+        height: 23px;
+      }
+    }
+
+    a.github {
+      background-color: #000;
+
+      svg.logo {
+        background-color: #fff;
+      }
+
+      &:hover {
+        background-color: lighten($color: #000000, $amount: 20);
+      }
+    }
+
+    a.gmail {
+      color: #000;
+      border: 2px solid #000;
+
+      svg.logo {
+        border-radius: 0px;
+      }
+
+      &:hover {
+        background-color: darken($color: #fff, $amount: 20);
+      }
+    }
+
+    a.telegram {
+      background-color: #29b6f6;
+
+      &:hover {
+        background-color: darken($color: #29b6f6, $amount: 20);
+      }
+    }
+  }
+}
