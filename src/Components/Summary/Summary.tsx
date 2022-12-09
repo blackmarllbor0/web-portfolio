@@ -9,7 +9,7 @@ export const Summary = () => {
         указаны контакты для связи. До связи!
       </h1>
       <div className="download_block">
-        <a href="." download={summary} title={"Панов Даниил"}>
+        <a href={summary} download={"Панов Даниил"} title={"Панов Даниил"}>
           Скачать резюме в .pdf
         </a>
       </div>
